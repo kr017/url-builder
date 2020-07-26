@@ -1,1 +1,67 @@
 <!-- Write your HTML code here -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="script.js"></script>
+
+</head>
+<body>
+
+    
+    <div class="container">
+        <p class="main_heading">URL Builder</p>
+ 
+        <div class="content">
+            <header class="heading">Enter URL and parameters</header>
+
+            <div class="main">
+                <span class="red">*</span>
+                <label for="url">Original URL</label>
+                <textarea name="url" id="url" cols="30" rows="1" value="" 
+                onchange="handleChange(this.value,this.name)"></textarea>
+            </div>
+
+
+            <div class="main">
+                <span class="red">*</span>
+                <label for="url">Source</label>
+                <input type="text" class="input" name="source" id="source"
+                onchange="handleChange(this.value,this.name)"> 
+            </div>
+
+            <div class="main">
+                <span class="red">*</span>
+                <label for="url">Team</label>
+                <input type="text" class="input" name="team" id="team"
+                onchange="handleChange(this.value,this.name)">
+            </div>
+           
+            
+
+           
+
+
+            <div class="result">
+                <header>Generated URL</header>
+                <textarea name="" id="finalresult" cols="30" rows="auto"></textarea>
+                <div class="button">
+                        <span id="tooltip" ></span>
+
+                        <button type="submit" id="btnSubmit" onclick="copyFunction()" >Copy URL</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    </div>
+
+    
+</body>
+</html>
